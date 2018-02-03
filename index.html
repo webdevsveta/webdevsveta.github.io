@@ -18,6 +18,7 @@
 		<title>Светлана Ведерникова - создание сайтов  </title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=greek-ext" rel="stylesheet">
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
+		<link rel="stylesheet" href="css/animate.css">
 		<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -25,16 +26,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7">
-			<img class="header-img" src="img/main.img.png" alt="монотор">	
+			<img class="header-img wow fadeInLeftBig" src="img/main.img.png" alt="монотор">	
 			</div>
 			<!-- /.col-7 -->
 			<div class="col-lg-5">
-				<p class="header-pretitle">Веб-разработчик</p>
-				<h1 class="header-title">Светлана Ведерникова</h1>
-				<p class="header-subtitle">Верстка на HTML/CSS <br>
+				<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+				<h1 class="header-title wow fadeInRightBig"
+				data-wow-delay="0.2s">Светлана Ведерникова</h1>
+				<p class="header-subtitle wow fadeInRightBig"
+				data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 Разработка сайтов под ключ</p>
-<div class="header-batton-block">
-	<a href="https://vk.com/id159789369" class="header-button">Связаться</a>
+<div class="header-batton-block wow fadeInRightBig" data-wow-delay=1s">
+	<a href="https://vk.com/id159789369" class="header-button ">Связаться</a>
 <small>*Это бесплатно</small>
 </div>
 			</div>
@@ -45,7 +48,7 @@
 </header>
 <section class="portfolio">
 	<div class="contener">
-		<div class="porfolio-blok">
+		<div class="porfolio-blok wow fadeIn">
 		<h2 class="portfolio-title">Портфолио</h2>
 		<p class=portfolio-subtitle>Мои работы</p>
 		<div class="row">
@@ -84,10 +87,11 @@
 		<div class="col-md-4">
 			<div class="socil-block">
 				<p>Подпишитесь:</p>
-				<a href="https://fb.com"><img src="img/socials/facebook-logo-button.png" alt="fecebook"></a>
-				<a href="https://t.me.com"><img src="img/socials/telegram-symbol.png" alt="telegram"></a>
-				<a href="https://vk.com"><img src="img/socials/vk-social-logotype.png" alt="Вконтакте"></a>
-				<a href="https://youtube.com/c/GloAcademyChannel"><img src="img/socials/youtube-symbol.png" alt="YoTube"></a>
+				<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://fb.com "><img  src=" 
+					img/socials/facebook-logo-button.png" alt="fecebook"></a>
+				<a class="wow bounceInDown" data-wow-delay="0.2s" href="https://t.me.com"><img   src="img/socials/telegram-symbol.png" alt="telegram"></a>
+				<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com"><img   src="img/socials/vk-social-logotype.png" alt="Вконтакте"></a>
+				<a class="wow bounceInDown" data-wow-delay="0.4s" href="https://youtube.com/c/GloAcademyChannel"><img   src="img/socials/youtube-symbol.png" alt="YoTube"></a>
 			</div>
 		</div>
 		
@@ -100,5 +104,9 @@
 	</div>
 	<!-- /.comtainer -->
 </footer>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 </body>
 </html>
